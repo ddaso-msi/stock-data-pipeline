@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: daily_returns
+    description: Daily percentage returns per stock
+    columns:
+      - name: trade_date
+        tests:
+          - not_null
+      - name: ticker
+        tests:
+          - not_null
+
+  - name: sector_daily_summary
+    description: Sector-level daily performance
+    columns:
+      - name: sector
+        tests:
+          - not_null

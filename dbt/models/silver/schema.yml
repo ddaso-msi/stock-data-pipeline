@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_stock_prices
+    description: Cleaned stock price data
+    columns:
+      - name: trade_date
+        tests:
+          - not_null
+      - name: ticker
+        tests:
+          - not_null
+      - name: close_price
+        tests:
+          - not_null
+      - name: sector
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['IT', 'Banking', 'Pharma', 'FMCG', 'Auto', 'Conglomerate', 'Infra', 'Telecom', 'Index']

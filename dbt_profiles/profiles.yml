@@ -1,0 +1,12 @@
+stock_analytics:
+  outputs:
+    dev:
+      type: postgres
+      host: postgres
+      port: 5432
+      user: warehouse
+      pass: warehouse123
+      dbname: stock_warehouse
+      schema: public
+      threads: 1
+  target: dev

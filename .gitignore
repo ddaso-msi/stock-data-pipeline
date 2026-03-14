@@ -1,0 +1,9 @@
+logs/
+__pycache__/
+*.pyc
+dbt/target/
+dbt/logs/
+*.parquet
+*.csv
+temp_*
+.DS_Store
